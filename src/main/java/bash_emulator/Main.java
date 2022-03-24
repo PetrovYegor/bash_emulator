@@ -5,10 +5,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         Controller c = new Controller();
         c.initialize();
-        System.out.println(Controller.getCurrentDirectory());
 
         Scanner s = new Scanner(System.in);
 
@@ -34,7 +32,6 @@ public class Main {
             } else if (str.contains("cp ")){
                 c.copyFile(str);
             }
-        }
-
     }
+}
 }
